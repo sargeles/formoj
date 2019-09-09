@@ -1,0 +1,845 @@
+@charset "UTF-8";
+/* @import url("//hello.myfonts.net/count/396768"); */
+
+/**
+ * Content
+ */
+
+/* @font-face {font-family: 'TimesLTPro-Roman';src: url('webfonts/396768_0_0.eot');src: url('webfonts/396768_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/396768_0_0.woff2') format('woff2'),url('webfonts/396768_0_0.woff') format('woff'),url('webfonts/396768_0_0.ttf') format('truetype');}
+
+@font-face {font-family: 'AntiqueOliveStd-Black';src: url('webfonts/396768_1_0.eot');src: url('webfonts/396768_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/396768_1_0.woff2') format('woff2'),url('webfonts/396768_1_0.woff') format('woff'),url('webfonts/396768_1_0.ttf') format('truetype');} */
+
+/* @font-face {font-family: 'AntiqueOliveStd-Black';
+    src: url('/static/fonts/Linotype\ -\ AntiqueOliveStd-Black.otf') format('woff'), 
+		url('/static/fonts/Linotype\ -\ AntiqueOliveStd-Black.otf') format('woff2'),
+		url('/static/fonts/Linotype\ -\ AntiqueOliveStd-Black.otf') format('truetype');}
+@font-face {font-family: 'TimesLTPro-Roman';
+    src: url('/static/fonts/Adobe\ -\ TimesLTStd-Roman.otf') format('woff'), 
+    url('/static/fonts/Adobe\ -\ TimesLTStd-Roman.otf') format('woff2'),
+	url('/static/fonts/Adobe\ -\ TimesLTStd-Roman.otf') format('truetype');} */
+/* @font-face {font-family: 'NotoSerifCJKsc';
+    src: url('/static/fonts/NotoSerifCJKsc-Regular.txt') format('woff'),
+		 url('/static/fonts/NotoSerifCJKsc-Regular.txt') format('woff2'),
+         url('/static/fonts/NotoSerifCJKsc-Regular.txt') format('truetype'),
+         url('/static/fonts/NotoSerifCJKsc-Regular.otf') format('opentype'); 
+} */
+
+@font-face {font-family: 'TimesLTPro-Roman';src: url('/static/webfonts/396768_0_0.ttf') format('truetype');}
+@font-face {font-family: 'AntiqueOliveStd-Black';src: url('/static/webfonts/396768_1_0.ttf') format('truetype');}
+ 
+html{
+    font-size: 16px;
+}
+body {
+	background-color: #fff;
+    color: #000;
+    font-family: 'AntiqueOliveStd-Black', 'TimesLTPro-Roman', 'NotoSerifCJKsc';
+    margin:0;
+    
+}
+p{
+    margin:0;
+}
+a{ 
+	text-decoration:none; 
+	color:#333; 	
+}
+
+i,
+em {
+	font-style: italic;
+}
+
+b,
+strong {
+	font-weight: bold;
+}
+
+sub,
+sup {
+	position: relative;
+	vertical-align: baseline;
+}
+
+sub {
+	top: 0.3em;
+}
+
+sup {
+	top: -0.4em;
+}
+
+s {
+	text-decoration: line-through;
+}
+
+img {
+	border: 0;
+	padding: 0;
+}
+
+ul,
+ol {
+	margin: 0;
+	padding: 0 0 0 1em;
+}
+
+blockquote {
+	margin: 0;
+	padding: 0 0 0 2em;
+}
+
+hr {
+	background: rgba(127, 127, 127, 0.2);
+	border: 0;
+	height: 1px;
+	display: block;
+}
+
+.content-img img {
+	float: none;
+    margin-bottom: .5em;
+    cursor: url(/static/img/icon.png), pointer;
+}
+
+.gallery_image_caption {
+    margin-top: 1.2rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+	font-weight: 400;
+	color: rgba(0, 0, 0, 0.35);
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, "Sans Serif", Icons/*!System*/;
+	font-style: normal;
+	line-height: 1.3;	
+}
+
+/**
+ * Editor styles
+ */
+a::selection {
+    background:#000;
+    color:#fff;
+}
+b::selection {
+    background:#000;
+    color:#fff;
+}
+h2::selection {
+    background:#000;
+    color:#fff;
+}
+p::selection {
+    background:#000;
+    color:#fff;
+}
+p::-moz-selection {
+    background:#000;
+    color:#fff;
+}
+p::-webkit-selection {
+    background:#000;
+    color:#fff;
+}
+
+small::selection {
+    background:#000;
+    color:#fff;
+}
+small::-moz-selection {
+    background:#000;
+    color:#fff;
+}
+small::-webkit-selection {
+    background:#000;
+    color:#fff;
+}
+
+h1::selection {
+    background:#000;
+    color:#fff;
+}
+h1::-moz-selection {
+    background:#000;
+    color:#fff;
+}
+h1::-webkit-selection {
+    background:#000;
+    color:#fff;
+}
+
+[data-predefined-style="true"] bodycopy {
+	font-size: 1.5rem;
+	font-weight: 400;
+	color: rgba(0, 0, 0, 0.85);
+	font-family: -apple-system, AntiqueOliveStd-Black, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, 'Sans Serif', Icons /*!System*/;
+	font-style: normal;
+	line-height: 0.2;
+}
+
+[data-predefined-style="true"] bodycopy a {
+	color: rgb(0, 0, 0);
+	padding-bottom: 0.1em;
+	border-bottom: 0.0em solid rgba(127, 127, 127, 0.2);
+	text-decoration: none;
+}
+
+/* [data-predefined-style="true"] bodycopy a:hover {
+
+} */
+
+bodycopy a.image-link,
+bodycopy a.icon-link,
+bodycopy a.image-link:hover,
+bodycopy a.icon-link:hover {
+	border-bottom: 0;
+	padding-bottom: 0;
+}
+
+[data-predefined-style="true"] h1 {
+	font-family: -apple-system, AntiqueOliveStd-Black, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, "Sans Serif", Icons /*!System*/;
+	font-style: normal;
+	font-weight: 400;
+	padding: 0;
+	margin: 0;
+	font-size: 3rem;
+	line-height: 1.2;
+	color: rgba(0, 0, 0, 0.85);
+	text-rendering: optimizeLegibility;
+}
+
+[data-predefined-style="true"] bodycopy h1.AntiqueOliveStd-Black {
+	font-family: -apple-system, AntiqueOliveStd-Black, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, "Sans Serif", Icons /*!System*/;
+	font-style: normal;
+	font-weight: 400;
+	padding: 0;
+	margin: 0;
+	font-size: 4rem;
+	line-height: 0;
+	color: rgba(0, 0, 0, 0.85);
+	text-rendering: optimizeLegibility;
+}
+
+[data-predefined-style="true"] h1 a {
+	color: rgba(0, 0, 0, 0.85);
+}
+
+[data-predefined-style="true"] h2 {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, "Sans Serif", Icons /*!System*/;
+	font-style: normal;
+	font-weight: 400;
+	padding: 0;
+	margin: 0;
+	color: rgba(0, 0, 0, 0.85);
+	font-size: 1.7rem;
+	line-height: 1.5;
+	text-rendering: optimizeLegibility;
+}
+
+[data-predefined-style="true"] h2 a {
+	color: rgba(0, 0, 0, 0.85);
+}
+.page-title{
+    font-family: 'AntiqueOliveStd-Black';
+    font-size: 3.438rem;
+    font-weight: 450;
+    letter-spacing: 0.0018rem;
+    line-height: 4.125rem;
+    margin-bottom: 3.875rem;
+}
+small {
+	display: inline-block;
+	font-style: normal;
+    color: rgba(0, 0, 0, 1);
+    font-family: source-han-serif-sc, serif;
+    text-align: justify;
+    padding-right: 1rem;
+    font-size: 1.5rem;
+    font-weight: 450;
+    letter-spacing: 0.053rem;
+    line-height: 3.125rem;
+}
+
+small a {
+	color: rgba(0, 0, 0, 1);
+	border-bottom-width: 0em;
+}
+
+.AntiqueOliveStd-Black {
+	display: inline-block;
+	line-height: 0;
+	font-family: -apple-system, AntiqueOliveStd-Black, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, 'Sans Serif', Icons /*!System*/;
+	font-style: normal;
+	font-size: 1.375rem;
+    font-weight: 450;
+    letter-spacing: 0.007rem;
+    color: rgba(0, 0, 0, 1);
+}
+p.font-size-large{
+    font-size: 2.25rem;
+}
+
+a.hoverHide:hover {
+	color: #fff;
+}
+p.hoverHide:hover {
+	color: #fff;
+}
+	
+p.TimesLTPro-Roman {
+    display: inline-block;
+    font-size: 1.688rem;
+    line-height: 2.5rem;
+    font-family: 'TimesLTPro-Roman';
+    font-style: normal;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 1);
+    text-align: justify;
+    letter-spacing: 0.068rem;
+}
+.about p.TimesLTPro-Roman{
+	text-align: center;
+}
+
+/*
+ * Image Zoom
+ */
+
+.content img.image-zoom:active {
+  opacity: .7;
+}
+
+.image-zoom-background {
+	background: rgba(255, 255, 255, 0.95);
+}
+
+
+/**
+ * Image Zoom Navigation Arrows 
+ */
+
+.image-zoom-navigation .left-arrow,
+.image-zoom-navigation .right-arrow {
+    /* Change height/width together to scale */
+    height: 36px;
+    width: 36px;
+}
+
+.image-zoom-navigation .left-arrow .inner-color,
+.image-zoom-navigation .right-arrow .inner-color {
+    fill: #fff;
+}
+
+.image-zoom-navigation .left-arrow .outer-color,
+.image-zoom-navigation .right-arrow .outer-color {
+    fill: #000;
+    opacity: 0.2;
+}
+
+.image-zoom-navigation .close-button {  
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /* Change height/width together to scale */
+    width: 36px;
+    height: 36px;
+}
+
+.image-zoom-navigation .close-button .inner-color {
+    fill: #fff;
+}
+
+.image-zoom-navigation .close-button .outer-color {
+    fill: #000;
+    opacity: 0.2;
+}
+
+/** 
+ * Image Gallery Navigation Arrows 
+ */
+ 
+.image-gallery-navigation .left-arrow,
+.image-gallery-navigation .right-arrow {
+    /* Change height/width together to scale */
+    height: 56px;
+    width: 56px;
+}
+
+.image-gallery-navigation .left-arrow .inner-color,
+.image-gallery-navigation .right-arrow .inner-color {
+    fill: #fff;
+}
+
+.image-gallery-navigation .left-arrow .outer-color,
+.image-gallery-navigation .right-arrow .outer-color {
+    fill: #000;
+    opacity: 0.2;
+}
+
+/**
+ * Wallpaper Backdrop Navigation Arrows 
+ */
+
+.wallpaper-navigation .left-arrow,
+.wallpaper-navigation .right-arrow {
+   /* Change height/width together to scale */
+   width: 56px;
+   height: 56px;
+}
+
+.wallpaper-navigation .left-arrow .inner-color,
+.wallpaper-navigation .right-arrow .inner-color {
+   fill: #fff;
+}
+
+.wallpaper-navigation .left-arrow .outer-color,
+.wallpaper-navigation .right-arrow .outer-color {
+    fill: #000;
+    opacity: 0.2;
+}
+
+/*
+ * Audio Player
+ */
+
+.audio-player {
+    max-width: 36rem;
+    height: 3.3rem;
+    outline: 1px solid rgba(0,0,0,0.15);
+    color: rgba(0, 0, 0, 0.6);
+    background: #fff;
+    font-size: 1.2rem;
+    line-height: 1.3;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, "Sans Serif", Icons/*!System*/;
+    font-style: normal;
+    font-weight: 400;
+    text-align: left;
+    margin: 1px 1px 1em 1px;
+}
+
+body.mobile .audio-player {
+    max-width: 100%;
+}
+
+.audio-player .separator {
+    width: 1px;
+    background-color: rgba(0,0,0,0.15);
+}
+
+.audio-player .button {
+    background: transparent;
+    cursor: pointer;
+    fill: rgba(0, 0, 0, 0.85);
+}
+
+.audio-player .icon {
+    fill: rgba(0, 0, 0, 0.85);
+    padding: 30%;
+    width: 100%;
+    margin: auto;
+}
+
+.audio-player .buffer {
+    background: rgba(0,0,0,0.03);
+}
+
+.audio-player .progress {
+    background: rgba(0,0,0,0.1);
+}
+
+.audio-player .progress-indicator {
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    width: 1px;
+    height: 100%;
+    right: 0;
+    position: absolute;
+    cursor: ew-resize;
+}
+
+.audio-player .note-icon {
+    height: 100%;
+    width: 3.8rem;
+    padding: 1rem;
+    fill: rgba(0, 0, 0, 0.5);
+}
+
+.audio-player .current-time {
+    padding-left: 1rem;
+}
+
+.audio-player .total-time {
+    padding-right: 1rem;
+}
+
+/*
+topbar
+*/
+.selected{
+    background:url('/static/img/top-circle.png');
+}
+
+/*
+content
+*/
+
+.content {
+	margin: 1rem 5.5rem 18.3375rem 5.5rem;
+	display:flex;
+	flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    overflow: hidden;
+}
+.content .page_header{
+    max-width: 109rem;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 4.5625rem;
+}
+.content .page_header p{
+    line-height: 2rem;
+}
+.content .page_header .content-icon{
+    margin-top: 0;
+}
+.content-nav {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    max-width: 109.0625rem;
+    margin: auto;
+}
+
+.content-nav .content-icon {
+    margin: 1rem 0;
+}
+.icon-rotate {
+    transform: rotate(45deg);
+}
+
+.content-des {
+    display: none;
+}
+
+.content div {
+    width: 100%;
+    height: auto;
+}
+.content-des{
+    max-width: 109rem;
+    margin:auto;
+}
+.content .content-img {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 109.0625rem;
+    margin: 1rem auto 0.85rem;
+    font-size: 0;
+}
+
+.content video{
+    margin: 1rem auto 0.85rem;
+    width: 108rem;
+}
+
+.img-1-column {
+    width:100%;
+}
+
+.img-2-column {
+    width:49.5%;
+    margin-right:1%;
+}
+.img-2-column:last-child{
+    margin-right:0;
+}
+.img-3-column {
+    width:32.130%;
+    margin-right:1.875rem;
+}
+.img-3-column:last-child{
+    margin-right:0;
+}
+
+.content-button{
+	display: table;
+}
+.content-button div{
+    display: inline-block;
+    width: 2.25rem;
+    height: 2.25rem;
+    vertical-align: middle;
+    margin-left: 1.6rem;
+    margin-top: -1rem;
+}
+.content-icon1 {
+    display:block;
+    height: 2.25rem;
+    width: 2.25rem;
+}
+.content-icon2 {
+	display:none;
+    height: 2.25rem;
+    width: 2.25rem;
+}
+
+
+.content-icon:hover .content-icon1 {
+	display:none;
+}
+
+.content-icon:hover .content-icon2 {
+	display:block;
+}
+
+
+
+/*
+about
+*/
+#about {
+	margin: 6.8rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+#about div {
+	text-align:center;
+}
+.our-service {
+    margin: 1.3rem 14% 0px 14%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+/* @media(max-width : 1600px){
+    .our-service {
+        margin: 0.3rem 7% 0px 7%;
+    }
+}
+@media(max-width : 1500px){
+    .our-service {
+        margin: 0.3rem 4% 0px 4%;
+    }
+}
+@media(max-width : 1450px){
+    .our-service {
+        margin: 0.3rem 1% 0px 1%;
+    }
+}
+@media(max-width : 1390px){
+    .our-service {
+        margin: 0.3rem 0 0px 0;
+    }
+}
+@media(max-width : 1380px){
+    .our-service {
+        margin: 0.3rem 16rem 0px 20rem;
+    }
+} */
+.our-service-item:nth-child(3),
+.our-service-item:first-child{
+    z-index:1;
+}
+.our-service-item {
+    position: relative;
+    border: 1px solid #000;
+    width: 18.125rem;
+    padding: 1rem;
+    margin: 0.3rem 1rem 0 0;
+    float: left;
+    height: fit-content;
+}
+.our-service-item:first-child::after{
+    position: absolute;
+    right: -3.5rem;
+    top: -4.9375rem;
+    height: 10.125rem;
+    width: 5.75rem;
+    content: "";
+    background: url(../img/Group_140.png) no-repeat center center;
+    
+}
+.our-service-item:nth-child(3)::after{
+    position: absolute;
+    right: -3.1875rem;
+    bottom: -4.0625rem;
+    height: 10.5625rem;
+    width: 7rem;
+    content: "";
+    background: url(../img/Group_141.png) no-repeat center center;
+    
+}
+.our-service-item p{
+    font-size: 1.5rem;
+    font-family: TimesLTPro-Roman;
+    font-weight: 400;
+    margin-top: 0px;
+    line-height: 3.3rem;
+}
+.our-service-item small{
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+}
+.our-service-item .wow{
+    margin-bottom: 1.1rem;
+}
+@media(max-width:550px){
+    .our-service {
+        display: block;
+    }
+    .our-service-item {
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+}
+/*
+topbar
+*/
+
+#topbar {
+	display:flex;
+	flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+#topbar a{
+	left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+	position: absolute;
+}
+
+#topbar div{
+	position: relative;
+}
+
+#topbar-button {
+	display: flex;
+    order: 0;
+    width: 30rem;
+	height: inherit;
+    justify-content: left;
+    align-items: stretch;    
+    margin-top: 0.875rem;
+    margin-left: 2.625rem;
+}
+
+#topbar-home { 
+	text-align: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 6.813rem;
+    height: 3.375rem;
+} 
+#topbar-about { 
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 6.813rem;
+    height: 3.375rem;
+    margin: 0 10%;
+} 
+#topbar-logo { 
+	text-align:center;
+    width: 11.125rem;
+    height: 5.063rem;
+	background-image:url('/static/img/top-circle.png');
+	background-repeat: no-repeat;
+    background-size: contain;
+    background-position: contain;
+    margin-top:-0.0625rem;
+    font-size: 2.25rem;
+}
+
+/*
+bottom
+*/
+
+.bottom { 
+	height: 8vh;
+    width: 9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: end;
+}
+.bottom-button { 
+    height: 5rem;
+    width: 14.875rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: end;
+}
+.bottom-alt { 
+    background-image: url("/static/img/wechat-alt.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 6rem;
+    width: 9rem;
+    position: fixed;
+    bottom: 3.7rem;
+    left: 1.7rem;
+    display: none;
+}
+.bottom-bg {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 5rem;
+    width: 5rem;
+}
+.bottom-bg-1 { 
+    background-image: url("/static/img/ins.png");
+}
+.bottom-bg-1:hover { 
+    background-image: url("/static/img/ins-hover.png");
+}
+
+.bottom-bg-2 { 
+    background-image: url("/static/img/wechat.png");
+}
+.bottom-bg-2:hover { 
+    background-image: url("/static/img/wechat-hover.png");
+}
+
+.bottom-bg-3 { 
+    background-image: url("/static/img/email.png");
+}
+.bottom-bg-3:hover { 
+    background-image: url("/static/img/email-hover.png");
+}
+
+/*
+preview
+*/
+
+.preview{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    vertical-align: middle;
+    background: rgba(255, 255, 255, 0.95);
+    display: none;
+}
+.preview_img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: none;
+}
+.preview_icon{
+    position: absolute;
+    height: 2.25rem;
+    width: 2.25rem;
+}
