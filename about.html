@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="/static/css/common.css">
     <link rel="stylesheet" href="/static/css/MyFontsWebfontsKit.css">
     <style>
-        body {
-            backgro·und: url('about_bg.png') no-repeat left top;
-        }
-
+        /* body {
+            background: url('about_bg.png') no-repeat left top;
+        } */
+        
         .page-module b,
         h2 {
             height: 4.1875rem;
@@ -21,7 +21,7 @@
             letter-spacing: 0.0175rem;
             line-height: 4.128rem;
         }
-
+        
         .page-module {
             position: relative;
             background-image: url('/static/img/logo-circle.png');
@@ -31,16 +31,15 @@
             text-align: center;
             width: 16.875rem;
         }
-
+        
         .page-module b {
             position: absolute;
             width: 100%;
             left: 0;
             top: 50%;
             margin-top: -2.5rem;
-
         }
-
+        
         p.TimesLTPro-Roman {
             text-align: center;
             max-width: 1164px;
@@ -50,8 +49,13 @@
             letter-spacing: 1.08px;
             line-height: 2.5rem;
             margin-top: 2.8rem;
+            -webkit-text-size-adjust: none;
         }
-
+        
+        p.Inline {
+            margin-top: 0;
+        }
+        
         small {
             color: #231f20;
             font-family: source-han-serif-sc, serif;
@@ -62,29 +66,77 @@
             text-align: center;
             margin-top: 2.5rem;
         }
-
+        
         .margin_92 {
             height: 9.2rem;
         }
-
+        
         .margin_25 {
             height: 2.4rem;
         }
-
+        
         .small2 {
             margin-top: 0;
             line-height: 3.4rem;
         }
+        
+        @media(min-width: 780px) {
+            .slogan-en {
+                margin: 0px 10rem;
+            }
+            .slogan-zh {
+                margin: 2rem 10rem 0 10rem;
+            }
+        }
+        
+        @media(min-width: 1120px) {
+            .slogan-en {
+                margin: 0px 25rem;
+            }
+            .slogan-zh {
+                margin: 2rem 25rem 0 25rem;
+            }
+        }
+        
+        .awards {
+            margin-left: 4rem;
+            margin-right: 4rem;
+        }
+        
+        .press {
+            margin-left: 4rem;
+            margin-right: 4rem;
+        }
     </style>
     <script src="/static/js/plug.preload.js"></script>
     <script>
-        (function (d) {
+        (function(d) {
             var config = {
-                kitId: 'wkc4gxv',
-                scriptTimeout: 3000,
-                async: true
-            },
-                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+                    kitId: 'wkc4gxv',
+                    scriptTimeout: 3000,
+                    async: true
+                },
+                h = d.documentElement,
+                t = setTimeout(function() {
+                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                }, config.scriptTimeout),
+                tk = d.createElement("script"),
+                f = false,
+                s = d.getElementsByTagName("script")[0],
+                a;
+            h.className += " wf-loading";
+            tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+            tk.async = true;
+            tk.onload = tk.onreadystatechange = function() {
+                a = this.readyState;
+                if (f || a && a != "complete" && a != "loaded") return;
+                f = true;
+                clearTimeout(t);
+                try {
+                    Typekit.load(config)
+                } catch (e) {}
+            };
+            s.parentNode.insertBefore(tk, s)
         })(document);
     </script>
 </head>
@@ -95,8 +147,7 @@
             <a href="/" rel="history" class="AntiqueOliveStd-Black hoverHide">Work
             </a>
         </div>
-        <div id="topbar-about" class="topbar-item"><a href="/about.html" rel="history"
-                class="AntiqueOliveStd-Black hoverHide">About
+        <div id="topbar-about" class="topbar-item"><a href="/about.html" rel="history" class="AntiqueOliveStd-Black hoverHide">About
             </a>
         </div>
     </div>
@@ -118,22 +169,18 @@
             <h2>&nbsp;formoj</h2>
         </div>
     </div>
-    <div class="" data-wow-delay="0.5s" style="margin: 0px 6rem;">
-        <p class="TimesLTPro-Roman">Formoj is a shape obsessed creative studio based in NYC and Shanghai. With a focus
-            on art direction, graphic design, motion design and animation, we thrive on design driven strategy, visual
-            identity, branding, campaigns, events, advertising, etc.
+    <div class="slogan-en" data-wow-delay="0.5s">
+        <p class="TimesLTPro-Roman">
+            Formoj is a shape obsessed creative studio based in NYC and Shanghai. With a focus on art direction, graphic design, motion design and animation, we thrive on design drive strategy, visual identity, branding, campaigns, events, advertising, etc.
             <br>
-            <br>
-            The desire of carving whimsical simplicity, creating unique visual languages and bonding
-            clients with their target audience emotionally motivate us to explore.</p>
+            <br> The desire of carving whimsical simplicity, creating unique visual languages and bonding clients with their target audience emotionally motivate us to explore.</p>
 
     </div>
-    <div class="" data-wow-delay="1s" style="margin: 0px 6rem;">
-        <small>
-            Formoj是一所着迷于图形趣味的设计工作室，位于纽约和上海。工作室主要专注于艺术指导，平
-            面设计，动态图形和动画，工作领域包括视觉策划、视觉识别、品牌设计、展览活动视觉设计、广
-            告设计等。打磨出富有致趣的简洁，创造出独特的视觉语言，以及从情感上将客户与他们的目标客
-            户连接起来的信念，不断地推动着我们去探索。
+    <div class="slogan-zh" data-wow-delay="1s">
+        <small style="max-width: 1164px;">
+            <p class="TimesLTPro-Roman Inline">Formoj</p>是一所着迷于图形趣味的设计工作室，位于纽约和上海。工作室主要专注于艺术指导，平面设计，动态图形和动画，
+            工作领域包括视觉策划、视觉识别、品牌设计、展览活动视觉设计、广告设计等。
+            打磨出富有致趣的简洁，创造出独特的视觉语言，以及从情感上将客户与他们的目标客户连接起来的信念，不断地推动着我们去探索。
         </small>
     </div>
     <div class="margin_92">
@@ -144,28 +191,22 @@
         </h2>
     </div>
     <div class="margin_25"></div>
-    <div class="wow fadeInUp thrive-on animated animated"
-        style="visibility: visible; animation-name: fadeInUp; margin-left: 1rem;margin-top:-0.1rem">
+    <div class="wow fadeInUp thrive-on animated animated" style="visibility: visible; animation-name: fadeInUp; margin-left: 1rem;margin-top:-0.1rem">
         <img src="/static/img/ad2x.png" alt="">
     </div>
-    <div class="wow fadeInUp thrive-on animated animated"
-        style="visibility: visible; animation-name: fadeInUp; margin-top: -1rem; margin-left: 1rem;">
+    <div class="wow fadeInUp thrive-on animated animated" style="visibility: visible; animation-name: fadeInUp; margin-top: -1rem; margin-left: 1rem;">
         <img src="/static/img/branding2x.png" alt="">
     </div>
-    <div class="wow fadeInUp thrive-on animated animated"
-        style="visibility: visible; animation-name: fadeInUp; margin-top: -0.3rem; margin-left: 1.1rem;">
+    <div class="wow fadeInUp thrive-on animated animated" style="visibility: visible; animation-name: fadeInUp; margin-top: -0.3rem; margin-left: 1.1rem;">
         <img src="/static/img/vi2x.png" alt="">
     </div>
-    <div class="wow fadeInUp thrive-on animated animated"
-        style="visibility: visible; animation-name: fadeInUp; margin-top: -0.3rem; margin-left: 2rem;">
+    <div class="wow fadeInUp thrive-on animated animated" style="visibility: visible; animation-name: fadeInUp; margin-top: -0.3rem; margin-left: 2rem;">
         <img src="/static/img/gd2x.png" alt="">
     </div>
-    <div class="wow fadeInUp thrive-on animated animated"
-        style="visibility: visible; animation-name: fadeInUp; margin-left: 1rem; margin-top: -0.4rem;">
+    <div class="wow fadeInUp thrive-on animated animated" style="visibility: visible; animation-name: fadeInUp; margin-left: 1rem; margin-top: -0.4rem;">
         <img src="/static/img/animation2x.png" alt="">
     </div>
-    <div class="wow fadeInUp thrive-on animated animated"
-        style="visibility: visible; animation-name: fadeInUp;margin-top:-0.5rem;margin-left:1rem">
+    <div class="wow fadeInUp thrive-on animated animated" style="visibility: visible; animation-name: fadeInUp;margin-top:-0.5rem;margin-left:1rem">
         <img src="/static/img/mg2x.png" alt="">
     </div>
     <div class="wow fadeInUp" data-wow-delay="0.7s">
@@ -251,61 +292,54 @@
             </div>
         </div>
     </div>
-    <!-- <div style="display: flex;flex-direction: row;justify-content: center;height: 30rem;">
-        <div class="Our-Service wow fadeInUp " style="background:url('/static/img/serveon1.png') no-repeat ;background-position: center;
-        background-size: contain;width: 30vw;    height: 50vh;">
-        </div>
-        <div class="Our-Service wow fadeInUp " style="background:url('/static/img/serveon2.png') no-repeat ;background-position: center;
-        background-size: contain;width: 30vw;    height: 50vh;    margin: 10vh 0 0 0;">
-        </div>
-    </div> -->
+
     <div>
         <div class="wow fadeInUp " style="padding-top: 10rem;">
             <h2>Selected Awards</h2>
         </div>
     </div>
-    <div class="wow fadeInUp" data-wow-delay="0.1s" grid-pad="1" grid-gutter="2">
+    <div class="wow fadeInUp awards" data-wow-delay="0.1s">
         <div grid-pad="1">
             <p class="TimesLTPro-Roman">Graphis New Talent Annual 2018 Merit Award</p><br>
-            <small class="small2">Graphis 2018 设计新秀优胜奖</small>
+            <small class="small2"><p class="TimesLTPro-Roman Inline">Graphis 2018</p> 设计新秀优胜奖</small>
         </div>
     </div>
-    <div class="wow fadeInUp" data-wow-delay="0.2s" grid-pad="1" grid-gutter="2">
+    <div class="wow fadeInUp awards" data-wow-delay="0.2s">
         <div grid-pad="1">
             <p class="TimesLTPro-Roman">TDC Communication Design Competition 2018 Certificate of Typographic Excellence
             </p>
             <br>
-            <small class="small2">第64届纽约字体指导俱乐部字体设计竞赛视觉传达 专业类</small>
+            <small class="small2">第<p class="TimesLTPro-Roman Inline">64</p>届纽约字体指导俱乐部字体设计竞赛视觉传达 专业类</small>
         </div>
     </div>
-    <div class="wow fadeInUp" data-wow-delay="0.3s" grid-pad="1" grid-gutter="2">
+    <div class="wow fadeInUp awards" data-wow-delay="0.3s">
         <div grid-pad="1">
             <p class="TimesLTPro-Roman">The Best Brand Awards North American 2018 Runner Up in North American</p><br>
-            <small class="small2">第5届最佳品牌竞赛北美赛区优胜奖</small>
+            <small class="small2">第<p class="TimesLTPro-Roman Inline">5</p>届最佳品牌竞赛北美赛区优胜奖</small>
         </div>
     </div>
-    <div class="wow fadeInUp" data-wow-delay="0.4s" grid-pad="1" grid-gutter="2">
+    <div class="wow fadeInUp awards" data-wow-delay="0.4s">
         <div grid-pad="1">
             <p class="TimesLTPro-Roman">The Best Brand Awards Asia 2018 Runner Up in Asia</p><br>
-            <small class="small2">第5届最佳品牌竞赛亚洲赛区优胜奖</small>
+            <small class="small2">第<p class="TimesLTPro-Roman Inline">5</p>届最佳品牌竞赛亚洲赛区优胜奖</small>
         </div>
     </div>
-    <div class="wow fadeInUp" data-wow-delay="0.5s" grid-pad="1" grid-gutter="2">
+    <div class="wow fadeInUp awards" data-wow-delay="0.5s">
         <div grid-pad="1">
             <p class="TimesLTPro-Roman">IDA International Design Awards 2018 Honorable Mention</p><br>
-            <small class="small2">第11届国际设计荣誉奖</small>
+            <small class="small2">第<p class="TimesLTPro-Roman Inline">11</p>届国际设计荣誉奖</small>
         </div>
     </div>
-    <div class="wow fadeInUp" data-wow-delay="0.6s" grid-pad="1" grid-gutter="2">
+    <div class="wow fadeInUp awards" data-wow-delay="0.6s">
         <div grid-pad="1">
             <p class="TimesLTPro-Roman">Graphis Branding7 Silver Award</p><br>
-            <small class="small2">Graphis 2018 品牌设计银奖</small>
+            <small class="small2"><p class="TimesLTPro-Roman Inline">Graphis 2018</p> 品牌设计银奖</small>
         </div>
     </div>
-    <div class="wow fadeInUp" data-wow-delay="0.7s" grid-pad="1" grid-gutter="2">
+    <div class="wow fadeInUp awards" data-wow-delay="0.7s">
         <div grid-pad="1">
-            <p class="TimesLTPro-Roman">2018 Communication Art Design &Advertising Competition Finalist</p><br>
-            <small class="small2">入选2018 Communication Art 设计与广告竞赛单元最终名单</small>
+            <p class="TimesLTPro-Roman">2018 Communication Art Design &Advertising Finalist</p><br>
+            <small class="small2">入选<p class="TimesLTPro-Roman Inline">2018 Communication Art</p> 设计与广告竞赛单元最终名单</small>
         </div>
     </div>
     <div>
@@ -313,46 +347,53 @@
             <h2>Selected Press</h2>
         </div>
     </div>
-    <div class="wow fadeInUp" data-wow-delay="0.1s" grid-pad="1" grid-gutter="2">
+    <div class="wow fadeInUp press" data-wow-delay="0.1s">
         <div grid-pad="1">
-            <small class="small2">把平凡物件变成更多可能，看这个纽约设计工作室如何玩转图形</small>
+            <a href="http://www.stylemode.com/life/artstyle/2018-07-27/15063.html" target="_blank">
+                <small class="small2 hoverHide">把平凡物件变成更多可能，看这个纽约设计工作室如何玩转图形</small>
+            </a>
         </div>
     </div>
-    <div class="wow fadeInUp" data-wow-delay="0.2s" grid-pad="1" grid-gutter="2">
+    <div class="wow fadeInUp press" data-wow-delay="0.2s">
         <div grid-pad="1">
-            <p class="TimesLTPro-Roman">The Plan Behind the Packaging:Leading Designers Moree Wu and Sijia Zhang<br>Give
-                a
-                Pre-Holiday
-                Crash Course on the Importance of Design</p>
+            <a href="https://www.theideatrader.com/the-plan-behind-the-packaging-leading-designers-moree-wu-and-sijia-zhang-give-a-pre-holiday-crash-course-on-the-importance-of-design/" target="_blank">
+                <p class="TimesLTPro-Roman hoverHide">The Plan Behind the Packaging:Leading Designers Moree Wu and Sijia Zhang Give a Pre-Holiday Crash Course on the Importance of Design</p>
+            </a>
         </div>
     </div>
-    <div class="wow fadeInUp" data-wow-delay="0.3s" grid-pad="1" grid-gutter="2">
+    <div class="wow fadeInUp press" data-wow-delay="0.3s">
         <div grid-pad="1">
-            <p class="TimesLTPro-Roman">Branding Project for Meet Featured on Design Clever</p>
+            <a href="https://www.designclever.co.uk/post/174592408230/meet-poster-design-2017-role-art-director" target="_blank">
+                <p class="TimesLTPro-Roman hoverHide">Branding Project for Meet Featured on Design Clever</p>
+            </a>
         </div>
     </div>
-    <div class="wow fadeInUp" data-wow-delay="0.4s" grid-pad="1" grid-gutter="2">
+    <div class="wow fadeInUp press" data-wow-delay="0.4s">
         <div grid-pad="1">
-            <p class="TimesLTPro-Roman">Sijia Zhang, Design Extraordinaire,<br>is Keeping a Close Eye on Where
-                Technology is
-                Headed</p>
+            <a href="https://ventsmagazine.com/2018/08/16/sijia-zhang-designer-extraordinaire-is-keeping-a-close-eye-on-where-technology-is-headed/" target="_blank">
+                <p class="TimesLTPro-Roman hoverHide">Sijia Zhang, Design Extraordinaire,<br>is Keeping a Close Eye on Where Technology is Headed</p>
+            </a>
         </div>
     </div>
-    <div class="wow fadeInUp" data-wow-delay="0.5s" grid-pad="1" grid-gutter="2">
+    <div class="wow fadeInUp press" data-wow-delay="0.5s">
         <div grid-pad="1">
-            <p class="TimesLTPro-Roman">Cut to Bliss: Force of Fashion – Motion Graphics by Moree Wu</p>
+            <a href="https://aworkstation.com/cut-to-bliss-force-of-fashion-motion-graphics-by-moree-wu/" target="_blank">
+                <p class="TimesLTPro-Roman hoverHide">Cut to Bliss: Force of Fashion – Motion Graphics by Moree Wu</p>
+            </a>
         </div>
     </div>
-    <div class="wow fadeInUp" data-wow-delay="0.6s" grid-pad="1" grid-gutter="2">
+    <div class="wow fadeInUp press" data-wow-delay="0.6s">
         <div grid-pad="1">
-            <p class="TimesLTPro-Roman">The Wonder of a Blank Page:<br>Moree Wu on How Playing with Shapes Became Her
-                Art
-                Form</p>
+            <a href="https://lngfrm.net/the-wonder-of-a-blank-page-moree-wu-on-how-playing-with-shapes-became-her-art-form/" target="_blank">
+                <p class="TimesLTPro-Roman hoverHide">The Wonder of a Blank Page:<br>Moree Wu on How Playing with Shapes Became Her Art Form</p>
+            </a>
         </div>
     </div>
-    <div class="wow fadeInUp" data-wow-delay="0.7s" grid-pad="1" grid-gutter="2">
+    <div class="wow fadeInUp press" data-wow-delay="0.7s">
         <div grid-pad="1">
-            <p class="TimesLTPro-Roman">L’art du football selon Hao Li</p>
+            <a href="https://www.au-premier-poteau.fr/lart-du-football-selon-hao-li" target="_blank">
+                <p class="TimesLTPro-Roman hoverHide">L’art du football selon Hao Li</p>
+            </a>
         </div>
     </div>
     <div>
@@ -370,8 +411,7 @@
         <a id="wechat" class="wow fadeInUp" data-wow-delay="0.2s">
             <div class="bottom-bg bottom-bg-2"></div>
         </a>
-        <a href="mailto:hello@formoj.studio?subject=test&amp;cc=抄送人邮箱&amp;subject=主题&amp;body=内容" class="wow fadeInUp"
-            data-wow-delay="0.3s">
+        <a href="mailto:hello@formoj.studio?subject=test&amp;cc=抄送人邮箱&amp;subject=主题&amp;body=内容" class="wow fadeInUp" data-wow-delay="0.3s">
             <div class="bottom-bg bottom-bg-3"></div>
         </a>
     </div>

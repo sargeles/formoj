@@ -9,19 +9,38 @@
     <link rel="stylesheet" href="/static/css/MyFontsWebfontsKit.css">
     <script>
         (function(d) {
-          var config = {
-            kitId: 'wkc4gxv',
-            scriptTimeout: 3000,
-            async: true
-          },
-          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+            var config = {
+                    kitId: 'wkc4gxv',
+                    scriptTimeout: 3000,
+                    async: true
+                },
+                h = d.documentElement,
+                t = setTimeout(function() {
+                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                }, config.scriptTimeout),
+                tk = d.createElement("script"),
+                f = false,
+                s = d.getElementsByTagName("script")[0],
+                a;
+            h.className += " wf-loading";
+            tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+            tk.async = true;
+            tk.onload = tk.onreadystatechange = function() {
+                a = this.readyState;
+                if (f || a && a != "complete" && a != "loaded") return;
+                f = true;
+                clearTimeout(t);
+                try {
+                    Typekit.load(config)
+                } catch (e) {}
+            };
+            s.parentNode.insertBefore(tk, s)
         })(document);
     </script>
     <style>
         /* body{
             background:url(../meet_bg.png) no-repeat left top;
         } */
-        
     </style>
     <script src="/static/js/jquery-3.1.0.min.js"></script>
     <script src="/static/js/jquery.validate.min.js"></script>
@@ -39,18 +58,20 @@
             '/static/img/ran/07.jpg',
             '/static/img/ran/08.gif'
         ];
-        _PreLoadImg(arrPreloadSrcs,function(){});
+        _PreLoadImg(arrPreloadSrcs, function() {});
     </script>
 </head>
 
 <body>
     <div id="topbar">
         <div id="topbar-button">
-            <div id="topbar-home" class="topbar-item"><a href="/" rel="history">
+            <div id="topbar-home" class="topbar-item">
+                <a href="/" rel="history">
                     <p class="AntiqueOliveStd-Black hoverHide">Work</p>
                 </a>
             </div>
-            <div id="topbar-about" class="topbar-item"><a href="/about.html" rel="history">
+            <div id="topbar-about" class="topbar-item">
+                <a href="/about.html" rel="history">
                     <p class="AntiqueOliveStd-Black hoverHide">About</p>
                 </a>
             </div>
@@ -61,39 +82,34 @@
             </a>
         </div>
     </div>
-    
+
     <div class="content">
         <div class="page_header">
-                <h1 class="page-title">Ran</h1>
-        
+            <h1 class="page-title">Ran</h1>
+
             <div>
                 <p class="AntiqueOliveStd-Black" style="height: auto; max-height: none; min-height: 0px;">Product; Branding</p>
             </div>
             <div class="content-button">
-                    <p class="AntiqueOliveStd-Black" style="height: auto; margin-top: 0.9375rem;">Project Info</p>
-                    <div class="content-icon">
-                        <img class="content-icon1"
-                            src="/static/img/icon.png"
-                            alt="">
-                        <img class="content-icon2"
-                            src="/static/img/Group-1352x.png"
-                            alt=""></div>
-                </div>
-            
-                
-            
+                <p class="AntiqueOliveStd-Black" style="height: auto; margin-top: 0.9375rem;">Project Info</p>
+                <div class="content-icon">
+                    <img class="content-icon1" src="/static/img/icon.png" alt="">
+                    <img class="content-icon2" src="/static/img/Group-1352x.png" alt=""></div>
+            </div>
+
+
+
         </div>
         <div class="content-des">
-            <p class="TimesLTPro-Roman">It is a work that records traveling with ink. We draw impressive city views from our memory under the most relaxed situation. To strengthen printing and dyeing, to explore the power that hand making brings to our artwork, we carve the painting into the rubber stamp. The texture of the rubber stamp introduces strong personal feelings.
+            <p class="TimesLTPro-Roman">It is a work that records traveling with ink. We draw impressive city views from our memory under the most relaxed situation. To strengthen printing and dyeing, to explore the power that hand making brings to our artwork, we carve the painting
+                into the rubber stamp. The texture of the rubber stamp introduces strong personal feelings.
                 <br/><br/>
             </p>
-            <p>
-                <small>用墨水记录旅行的感觉。在最放松的状态下，让记忆自然流淌于笔尖，画出那些城市曾让我们心动的一瞥。为了让印染的感受更加深刻，同时也更想探索手作带给作品的力量，我们尝试把画下来的图像刻成橡皮章，图像通过橡皮章转印后的质感呈现出来更浓厚的人情味。</small>
-                <br/><br/><br/>
-            </p>
+            <small>用墨水记录旅行的感觉。在最放松的状态下，让记忆自然流淌于笔尖，画出那些城市曾让我们心动的一瞥。为了让印染的感受更加深刻，同时也更想探索手作带给作品的力量，我们尝试把画下来的图像刻成橡皮章，图像通过橡皮章转印后的质感呈现出来更浓的人情味。</small>
+            <br/><br/><br/>
         </div>
-    
-       
+
+
         <div class="content-img wow fadeInUp">
             <img class="img-1-column wow fadeInUp" data-src="/static/img/ran/01.jpg" src="/static/img/ran/01.jpg" alt="">
         </div>
@@ -106,7 +122,7 @@
             <img class="img-2-column wow fadeInUp" data-src="/static/img/ran/03.gif" src="/static/img/ran/03.gif" alt="">
             <img class="img-2-column wow fadeInUp" data-src="/static/img/ran/04.gif" src="/static/img/ran/04.gif" alt="">
         </div>
-    
+
         <div class="content-img wow fadeInUp">
             <img class="img-2-column wow fadeInUp" data-src="/static/img/ran/05.gif" src="/static/img/ran/05.gif" alt="">
             <img class="img-2-column wow fadeInUp" data-src="/static/img/ran/06.jpg" src="/static/img/ran/06.jpg" alt="">
@@ -116,31 +132,23 @@
             <img class="img-2-column wow fadeInUp" data-src="/static/img/ran/07.jpg" src="/static/img/ran/07.jpg" alt="">
             <img class="img-2-column wow fadeInUp" data-src="/static/img/ran/08.gif" src="/static/img/ran/08.gif" alt="">
         </div>
-        
+
         <div class="content-nav wow fadeInUp">
             <a href="javascript:page(-1)" rel="prev_page">
                 <div class="content-icon">
-                    <img class="content-icon1"
-                        src="/static/img/left2x.png"
-                        alt="">
-                    <img class="content-icon2"
-                        src="/static/img/Group-1372x.png"
-                        alt="">
+                    <img class="content-icon1" src="/static/img/left2x.png" alt="">
+                    <img class="content-icon2" src="/static/img/Group-1372x.png" alt="">
                 </div>
             </a>
             <a href="javascript:page(1)" rel="next_page">
                 <div class="content-icon">
-                    <img class="content-icon1"
-                        src="/static/img/right2x.png"
-                        alt="">
-                    <img class="content-icon2"
-                        src="/static/img/Group-1382x.png"
-                        alt="">
+                    <img class="content-icon1" src="/static/img/right2x.png" alt="">
+                    <img class="content-icon2" src="/static/img/Group-1382x.png" alt="">
                 </div>
             </a>
         </div>
     </div>
-    
+
     <div class="bottom">
         <div class="bottom-alt"></div>
         <div class="bottom-button">
@@ -150,18 +158,18 @@
             <a id="wechat" class="wow fadeInUp" data-wow-delay="0.2s">
                 <div class="bottom-bg bottom-bg-2"></div>
             </a>
-            <a href="mailto:hello@formoj.studio?subject=test&amp;cc=抄送人邮箱&amp;subject=主题&amp;body=内容" class="wow fadeInUp"
-                data-wow-delay="0.3s">
+            <a href="mailto:hello@formoj.studio?subject=test&amp;cc=抄送人邮箱&amp;subject=主题&amp;body=内容" class="wow fadeInUp" data-wow-delay="0.3s">
                 <div class="bottom-bg bottom-bg-3"></div>
             </a>
         </div>
     </div>
-    
+
     </div>
     <div class="preview">
         <img src="" alt="" width="90%" class="preview_img">
         <img src="" alt="" class="preview_icon" width="50">
     </div>
-    </body>
+</body>
 <script src="/static/js/content.js"></script>
+
 </html>

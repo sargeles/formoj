@@ -1,0 +1,233 @@
+
+/*
+home
+*/
+
+.homeDiv {     
+    margin: 7.75rem auto 5.1rem;
+    overflow: hidden;
+}
+.homeDiv ul { list-style-type: none;}
+.homeDiv .wow { 
+    display: inline-block;
+    margin: 1rem 1rem;
+    height: 30rem;
+    border-radius: 0%; 
+    font: 30px/280px "Microsoft Yahei";
+    vertical-align: top; 
+    *display: inline; 
+    zoom: 1;
+    height: 40rem;
+}
+.homeDiv .row{
+    font-size: 0; 
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    max-width: 100rem;
+    margin: auto;
+    font-size: 0;
+    
+}
+@media(min-width:1180px){
+    .homeDiv .row a{
+        display: block;
+        width: 31%;
+    
+    }
+}
+#homeTag{
+    position: absolute;
+    background-image: url(/);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.home-bg-1 { 
+    background-image: url("/static/img/meet.png");
+	background-repeat: no-repeat;
+    background-position: center 2.0rem;
+    width: 17.6875rem;
+    margin-left: -3.7rem;
+}
+.home-bg-1:hover { 
+    background-image: url("/static/img/meet-hover.png");
+}
+.home-bg-2 { 
+    background-image: url("/static/img/uniroom.png");
+	background-repeat: no-repeat;
+    background-position: center 9.9rem;
+    width: 34.4375rem;
+    margin-left: -0.1rem;
+}
+.home-bg-2:hover { 
+    background-image: url("/static/img/uniroom-hover.png");
+}
+
+.home-bg-3 { 
+    background-image: url("/static/img/hubot.png");
+	background-repeat: no-repeat;
+    background-position: center 7.8rem;
+    width: 28.125rem;
+    margin-left: 4.9rem;
+}
+.home-bg-3:hover { 
+    background-image: url("/static/img/hubot-hover.png");
+}
+
+.home-bg-4 { 
+    background-image: url("/static/img/cut-to-bliss.png");
+	background-repeat: no-repeat;
+    background-position: center 7.3rem;
+    width: 25.1875rem;
+    margin-left: -5.7rem;
+}
+.home-bg-4:hover { 
+    background-image: url("/static/img/cut-to-bliss-hover.png");
+}
+
+.home-bg-5 { 
+    background-image: url("/static/img/pacha.png");
+	background-repeat: no-repeat;
+    background-position: center 8.1rem;
+    width: 22.375rem;
+    margin-left: -0.4rem;
+}
+.home-bg-5:hover { 
+    background-image: url("/static/img/pacha-hover.png");
+}
+.home-bg-6 { 
+    background-image: url("/static/img/ran.png");
+	background-repeat: no-repeat;
+    background-position: center 5.0rem;
+    width: 18.5rem;
+    margin-left: 7.9rem;
+}
+.home-bg-6:hover { 
+    background-image: url("/static/img/ran-hover.png");
+}
+
+.home-bg-7 { 
+    background-image: url("/static/img/unicef.png");
+	background-repeat: no-repeat;
+    background-position: center 2.2rem;
+    width: 23.4375rem;
+    margin-left: 1.2rem;
+}
+.home-bg-7:hover { 
+    background-image: url("/static/img/unicef-hover.png");
+}
+@media(max-width:1550px){
+    .homeDiv .row{
+        display: block;
+        margin-left: -9rem;
+    }
+    .homeDiv .row a{
+        display: inline-block;
+    }
+    .home-bg-1 { 
+        background-image: url("/static/img/meet.png");
+        background-repeat: no-repeat;
+        background-position: center 2.0rem;
+        width: 17.6875rem;
+        margin-left: 3.3rem;
+    }
+    .home-bg-2 { 
+        margin-left: -2.1rem;
+    }
+    .home-bg-3 { 
+        margin-left: 4.9rem;
+    }
+    .home-bg-4 { 
+        margin-left: 7.3rem;
+    }
+    .home-bg-5 { 
+        margin-left: 9.6rem;
+    }
+    .home-bg-7 { 
+        margin-left: 7.2rem;
+    }
+
+}
+@media(max-width:1340px){
+    .home-bg-2 { 
+        margin-left: -3.1rem;
+    }
+    .home-bg-3 { 
+        margin-left: 3.9rem;
+    }
+    .home-bg-4 { 
+        margin-left: 7.3rem;
+    }
+    .home-bg-5 { 
+        margin-left: 9.6rem;
+    }
+}
+@media(max-width:1280px){
+    .home-bg-2 { 
+        margin-left: -4.1rem;
+    }
+    .home-bg-3 { 
+        margin-left: 2.9rem;
+    }
+    .home-bg-4 { 
+        margin-left: 6.3rem;
+    }
+    .home-bg-5 { 
+        margin-left: 7.6rem;
+    }
+}
+@media(min-width:1220px){
+    .home-bg-2 { 
+        margin-left: -4.9rem;
+    }
+    .home-bg-3 { 
+        margin-left: 1.9rem;
+    }
+    .home-bg-4 { 
+        margin-left: 5.3rem;
+    }
+    .home-bg-5 { 
+        margin-left: 7.6rem;
+    }
+}
+@media(max-width:1210px){
+    .home-bg-1 { 
+        margin-left: 12.3rem;
+    }
+    .home-bg-2 { 
+        margin-left: -0.1rem;
+    }
+    
+    .home-bg-3 { 
+        margin-left: 4.9rem;
+    }
+    .home-bg-4 { 
+        margin-left: -1.7rem;
+    }
+    .home-bg-5 { 
+        margin-left: 6.6rem;
+    }
+    .home-bg-6 { 
+        margin-left: 7.9rem;
+    }
+}
+@media(max-width:910px){
+    .homeDiv .row a{
+        display: block;
+        width: 100%;
+    
+    }
+    .home-bg-2 { 
+        margin-left: 9.9rem;
+    }
+    .home-bg-3 { 
+        margin-left: 7.9rem;
+    }
+    .home-bg-4 { 
+        margin-left: 6.3rem;
+    }
+}
